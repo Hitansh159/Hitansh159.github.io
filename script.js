@@ -45,9 +45,6 @@ function draw() {
       
   })
 
-  
-
-
 }
 
 function CaptureImage(){
