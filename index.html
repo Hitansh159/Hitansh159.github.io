@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONNX Demo</title>
+
+</head>
+
+<body>
+  
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+<script src="script.js"></script>
+<!-- 
+<script>
+
+  const ROI_X = 250;
+  const ROI_Y = 150;
+  const ROI_WIDTH = 280;
+  const ROI_HEIGHT = 280;
+
+  const FPS = 25;
+  function startCapture() {
+    const constraints = { video: true, audio: false };
+    navigator.mediaDevices.getUserMedia(constraints)
+      .then((stream) => {
+        console.log("Stream ready");
+
+        let cameraPreview = document.getElementById("my_video");
+        console.log(stream);
+        console.log(cameraPreview);
+        cameraPreview.srcObject = stream;
+
+      })
+      .catch((err) => {
+        alert("No media device found!");
+      });
+  };
+
+  // ONNX model 
+  // Not used here as it doen't support Graph operation
+  /*
+  async function setup() {
+
+    // Load our model.
+    const sess = new onnx.InferenceSession();
+    const loadingModelPromise = sess.loadModel("./movenet_lightning_latest_opset.onnx");
+    console.log("Loading.....");
+    // after laoding model
+    loadingModelPromise.then(async () => {
+      console.log("Loaded");
+
+      const video = document.getElementById("my_video");
+
+      const canvas = document.createElement("canvas");
+      // scale the canvas accordingly
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      // draw the video at that frame
+      canvas.getContext('2d')
+        .drawImage(video, 0, 0, 28, 28);
+      console.log(sess);
+      const imgData = canvas.getContext('2d').getImageData(0, 0, 280, 280);
+      const input = new onnx.Tensor(new Float32Array(imgData.data), "float32");
+      const outputMap = await sess.run([input]);
+      const outputTensor = outputMap.values().next().value;
+      const predictions = outputTensor.data;
+      const maxPrediction = Math.max(...predictions);
+      console.log(maxPrediction, outputMap, outputTensor, predictions);
+    });
+    // Worked loaded model 
+    // inference failed due to mismatch in size 
+    // Change model and try again 
+  }*/
+
+  async function startORT() {
+
+    const video = document.getElementById("my_video");
+
+    const canvas = document.createElement("canvas");
+    // scale the canvas accordingly
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    
+    // draw the video at that frame
+    canvas.getContext('2d')
+      .drawImage(video, 0, 0, 192, 144);
+    let session;
+    try {
+      session = await ort.InferenceSession.create('./movenet_lightning.onnx', { executionProviders: ['wasm'] });
+    }
+    catch (e) {
+      console.log("Error:", e);
+    }
+
+    console.log(session);
+
+    // Change RGBA to RGB  
+    var data = canvas.getContext('2d').getImageData(0, 0, 192, 192).data;
+    let temp = []
+    for (var i = 0; i < data.length; i += 4) {
+      temp.push(data[i], data[i + 1], data[i + 2]);
+    }
+
+    // prepare inputs. a tensor need its corresponding TypedArray as data
+    const dataA = new Int32Array(temp);
+
+    const tensorA = new ort.Tensor('int32', dataA, [1, 192, 192, 3]);
+
+    // prepare feeds. use model input names as keys.
+    const feeds = { input: tensorA };
+    const results = await session.run(feeds);
+    console.log(results.keras_layer_1);
+    temp = Array.prototype.slice.call(results.keras_layer_1.data);
+    let keypoints = []
+    while (temp.length) keypoints.push(temp.splice(0, 3));
+    console.log(keypoints, temp);
+    document.getElementsByTagName('body')[0].appendChild(canvas);
+
+  }
+  startCapture();
+
+
+
+</script>-->
+
+</html>
