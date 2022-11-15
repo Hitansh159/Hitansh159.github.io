@@ -27,7 +27,13 @@ ul{
     border-right: 2px solid white;
     width: 20%; 
     display: inline-block; 
-    height: 150px;
+    height: auto;
+}
+
+li{
+    padding: 10px;
+    margin:2px;
+    transition:0.5s;
 }
 
 .navlinks{
@@ -117,9 +123,22 @@ ul{
 }
 
 .card{
+    display:flex;
     margin: 50px;
     height: 250px;
     width:250px;
+    object-fit: cover;
+}
+
+.card > img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.card > img:hover{
+    transform: scale(1.2) translate(0px, -10px);
 }
 
 .achivement{
@@ -132,7 +151,14 @@ ul{
 
 .contact{
     padding:120px;
+    background: linear-gradient(0deg, #9d0dc13d, transparent);
 }
+
+.contactLink{
+    font-size:25px;
+    color: white;
+}
+
 
 .mailButton{
     background-color:rgba(255, 255, 255, 0);
@@ -148,5 +174,5 @@ ul{
 }
 
 .mailButton:hover {
-    background:linear-gradient(90deg, #0A1128 0%, #0059F1 100%);
+    background:linear-gradient(0deg, #9d0dc13d, transparent);
 }

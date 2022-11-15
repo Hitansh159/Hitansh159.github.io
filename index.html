@@ -29,16 +29,11 @@
         <h2>
             Hey there,
         </h2>
-        <p style="width:50%">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, vero odit? Quidem ullam recusandae, quae
-            dicta voluptas quia quibusdam animi sequi minima pariatur explicabo dolorum, labore laudantium, doloremque
-            deleniti adipisci!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, vero odit? Quidem ullam
-            recusandae, quae dicta voluptas quia quibusdam animi sequi minima pariatur explicabo dolorum, labore
-            laudantium, doloremque deleniti adipisci!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
-            vero odit? Quidem ullam recusandae, quae dicta voluptas quia quibusdam animi sequi minima pariatur explicabo
-            dolorum, labore laudantium, doloremque deleniti adipisci!Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Totam, vero odit? Quidem ullam recusandae, quae dicta voluptas quia quibusdam animi sequi minima
-            pariatur explicabo dolorum, labore laudantium, doloremque deleniti adipisci!
+        <p style="width:50%; font-size: 20px;">
+            I am <span style="font-size:27px;"> Hitansh Doshi</span>.<br />
+            A curious software engineer, exploring different domains. Currently, gathering experience and learning.
+            <br />
+            You can know more about me by scrolling.
         </p>
 
     </div>
@@ -48,17 +43,17 @@
         <h2>
             About me
         </h2>
-        <p style="width:50%">
-            Namaste! Interestingly,
-            I have been a student of Maths in high school and
-            got introduced to programming in my 6th Grade with QBasic at Bright Day School.
-            Since then, my curiosity towards innovation and computers,
-            and currently I'm persuing my Bachelors in Mechanical Engineering (2019-2023) at Birla Vishvakarma
-            Mahavidyalaya with 8.61 CPI until 5th Semester.
-            I have also been awarded as First Place Overall, Wolfram Award, & Best Social Hack in MakeUC Hackathon by
-            IEEE UC, University of Cincinati.
-            Additionally, I've won Gujarat Council on Science and Technology organized GUJCOST ROBOFEST 2.0 in the
-            category of Prosthetic Limbs with Remote Sensors.
+        <p style="width:50%;font-size: 18px;">
+            Namaste! <br />
+            I am a math lover who got introduced to programming in my 11th Grade with Javascript.<br />
+            Since childhood, video games have driven my curiosity towards computers and there workings.<br />
+            Currently I'm persuing my Bachelors in Computer Engineering (2019-2023) at Thakur college of engineering and
+            technology
+            with 9.49 CGPA until 7th Semester.<br />
+            I have Lead Google developer student club at my campus for year 2021-2022.I enjoy exploring different
+            technology and software systems.<br />
+            If you wish to talk about game designes, web dev, system architectecture, AI/ML, lets talk
+            <a href="#contact" style="color: #67d0ed;font-size: 20px;"> Here </a>
         </p>
     </div>
 
@@ -89,14 +84,22 @@
         <h2>
             Experience
         </h2>
-        <div>
-            <ul>
-                <li>
-                    JPMC
-                </li>
+        <div id="experience-holder" data-itemDisplay="0" style="display: flex;align-items: center;">
+            <ul id="experience-list">
+                <li style="background:#1282A2;">JP Morgan & Chase</li>
+                <li>Esamyak</li>
             </ul>
-            <div style="display: inline-block;padding-left: 50px;">
-                <div>this is a collabsable.</div>
+            <!-- change display according to click -->
+            <div id="experience-details" style="display: inline-block;padding-left: 50px;">
+                <div>
+                    Developed support tools for dashboard search <br />
+                    This tool will be used to debug issues with critical search service <br />
+                    The developed tool helped in finding bugs
+                </div>
+                <div>
+                    Created a sample REST API using JAVA SpringBoot <br />
+                    REST API had JWT as middleware to authorize user
+                </div>
             </div>
         </div>
     </div>
@@ -104,38 +107,20 @@
     <div class="project" id="project">
         <h2>Project</h2>
         <div class="card-holder">
-            <div class="card" style="display: flex;">
-                <!-- add better alt -->
-                <img src="/img/about.png" alt="project1" />
+            <div class="card">
+                <img src="/img/pizzams.png" alt="pizza management system" />
             </div>
 
-            <div class="card" style="display: flex;">
-                <!-- add better alt -->
-                <img src="/img/about.png" alt="project1" />
+            <div class="card">
+                <img src="/img/driverlesscar.png" alt="project1" />
             </div>
 
-            <div class="card" style="display: flex;">
-                <!-- add better alt -->
-                <img src="/img/about.png" alt="project1" />
+            <div class="card">
+                <img src="/img/nasaOnto.png" alt="project1" />
             </div>
 
-            <div class="card" style="display: flex;">
-                <!-- add better alt -->
-                <img src="/img/about.png" alt="project1" />
-            </div>
-            <div class="card" style="display: flex;">
-                <!-- add better alt -->
-                <img src="/img/about.png" alt="project1" />
-            </div>
-
-            <div class="card" style="display: flex;">
-                <!-- add better alt -->
-                <img src="/img/about.png" alt="project1" />
-            </div>
-
-            <div class="card" style="display: flex;">
-                <!-- add better alt -->
-                <img src="/img/about.png" alt="project1" />
+            <div class="card">
+                <img src="/img/styleTransfer.png" alt="project1" />
             </div>
 
         </div>
@@ -143,48 +128,129 @@
 
     <div class="achivement" id="achivement">
         <h2>Achivement</h2>
-        <ul>
-            <li>Code for good</li>
-        </ul>
-        <div style="display: inline-block;padding-left: 50px;">
-            <div>This is achivement</div>
+        <div id="achivement-holder" data-itemDisplay="0" style="display:flex;align-items:center;">
+            <ul id="achivement-list">
+                <li style="background:#1282A2;">Google developer student club</li>
+                <li>Google Hashcode</li>
+                <li>Google Kickstart</li>
+                <li>Reply Standard Coding Challenge</li>
+                <li>Google Codejam</li>
+                <li>NASA Space app challenge</li>
+            </ul>
+            <div id="achivement-details" style="display: inline-block;padding-left: 50px;">
+                <div>
+                    Lead the Google developer club. Organized 10+ workshops and speaker sessions on technical
+                    topics.<br />
+                    Organized first hackathon on android app development on campus. <br />
+                </div>
+                <div>
+                    Secured 1272 rank in global level coding competion.<br />
+                    Its a group based hureistic coding competion organized by Google. where target is to optimized the
+                    answer as much we can.
+                    <br />
+                </div>
+                <div>
+                    Secured 1526 rank at global level coding competion <br />
+                    It is individual participation competitvie coding competion organized by Google. <br />
+                </div>
+                <div>
+                    Secured 277 rank in global level coding competion.<br />
+                    Its a group based hureistic coding competion organized by Reply. where target is to optimized the
+                    answer as much we can.
+                </div>
+                <div>
+                    cleared qualification round and got 4076th rank <br />
+                    It is individual participation competitvie coding competion organized by Google.<br />
+                </div>
+                <div>
+                    Cleared regional round <br />
+                    Organized first hackathon on android app development on campus. <br />
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="speaker" id="speaker">
         <h2>Speaker at</h2>
-        <ul>
-            <li>Docker series</li>
-        </ul>
-        <div style="display: inline-block;padding-left: 50px;">
-            <div>Speaker at docekr</div>
+        <div style="display:flex;align-items:center;">
+            <ul>
+                <li style="background:#1282A2;">Docker series</li>
+            </ul>
+            <div style="display: inline-block;padding-left: 50px;">
+                <div>
+                    Taught docker in a 4 workshop series. <br />
+                    covering basics topics what is docker to running multiple instaces <br />
+                    follwed by introduction to kubernaties <br />
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="contact" id="contact">
         <h2>Contact Me</h2>
         <div style="display: flex; flex-direction: column;align-items: center;">
-            <button class="mailButton">
+            <button class="mailButton" onclick="location.href='mailto:hkd159@gmail.com';">
                 Mail me
             </button>
-            <div>
+            <a class="contactLink" href="https://www.linkedin.com/in/hitansh-doshi-b81530197/">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M2.08333 5.91242C2.08333 4.89687 2.48676 3.9229 3.20487 3.20479C3.92297 2.48669 4.89694 2.08326 5.91249 2.08326H44.0833C44.5866 2.08244 45.0851 2.18089 45.5503 2.37298C46.0155 2.56507 46.4382 2.84703 46.7943 3.20271C47.1503 3.55839 47.4327 3.98081 47.6253 4.44578C47.8179 4.91075 47.9169 5.40914 47.9167 5.91242V44.0832C47.9172 44.5866 47.8185 45.0852 47.6262 45.5504C47.4339 46.0156 47.1517 46.4383 46.7959 46.7943C46.44 47.1504 46.0175 47.4327 45.5524 47.6253C45.0873 47.8179 44.5888 47.9169 44.0854 47.9166H5.91249C5.40947 47.9166 4.91137 47.8175 4.44666 47.6249C3.98194 47.4323 3.55973 47.1501 3.20413 46.7943C2.84853 46.4385 2.56652 46.0161 2.37421 45.5513C2.1819 45.0865 2.08306 44.5884 2.08333 44.0853V5.91242ZM20.225 19.5583H26.4312V22.6749C27.3271 20.8833 29.6187 19.2708 33.0625 19.2708C39.6646 19.2708 41.2292 22.8395 41.2292 29.3874V41.5166H34.5479V30.8791C34.5479 27.1499 33.6521 25.0458 31.3771 25.0458C28.2208 25.0458 26.9083 27.3145 26.9083 30.8791V41.5166H20.225V19.5583ZM8.76666 41.2312H15.45V19.2708H8.76666V41.2291V41.2312ZM16.4062 12.1083C16.4188 12.6805 16.317 13.2495 16.1067 13.7818C15.8965 14.3142 15.582 14.7992 15.1817 15.2083C14.7815 15.6175 14.3035 15.9426 13.7759 16.1645C13.2484 16.3865 12.6817 16.5008 12.1094 16.5008C11.537 16.5008 10.9704 16.3865 10.4428 16.1645C9.91521 15.9426 9.43726 15.6175 9.03701 15.2083C8.63676 14.7992 8.32227 14.3142 8.112 13.7818C7.90172 13.2495 7.79989 12.6805 7.81249 12.1083C7.83723 10.985 8.3008 9.91615 9.10392 9.13052C9.90705 8.34488 10.9859 7.90496 12.1094 7.90496C13.2329 7.90496 14.3117 8.34488 15.1148 9.13052C15.9179 9.91615 16.3815 10.985 16.4062 12.1083V12.1083Z"
                         fill="#1282A2" />
                 </svg>
                 Linkedin
-            </div>
-            <div>
+            </a>
+            <a class="contactLink" href="https://github.com/Hitansh159">
                 <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M25 0C11.1875 0 0 11.1875 0 25C0 36.0625 7.15625 45.4062 17.0938 48.7188C18.3438 48.9375 18.8125 48.1875 18.8125 47.5312C18.8125 46.9375 18.7812 44.9688 18.7812 42.875C12.5 44.0312 10.875 41.3438 10.375 39.9375C10.0938 39.2188 8.875 37 7.8125 36.4062C6.9375 35.9375 5.6875 34.7812 7.78125 34.75C9.75 34.7188 11.1562 36.5625 11.625 37.3125C13.875 41.0938 17.4687 40.0312 18.9062 39.375C19.125 37.75 19.7812 36.6562 20.5 36.0312C14.9375 35.4062 9.125 33.25 9.125 23.6875C9.125 20.9688 10.0938 18.7188 11.6875 16.9688C11.4375 16.3438 10.5625 13.7812 11.9375 10.3438C11.9375 10.3438 14.0312 9.6875 18.8125 12.9062C20.8125 12.3438 22.9375 12.0625 25.0625 12.0625C27.1875 12.0625 29.3125 12.3438 31.3125 12.9062C36.0938 9.65625 38.1875 10.3438 38.1875 10.3438C39.5625 13.7812 38.6875 16.3438 38.4375 16.9688C40.0312 18.7188 41 20.9375 41 23.6875C41 33.2812 35.1562 35.4062 29.5937 36.0312C30.5 36.8125 31.2812 38.3125 31.2812 40.6562C31.2812 44 31.25 46.6875 31.25 47.5312C31.25 48.1875 31.7187 48.9688 32.9688 48.7188C37.9316 47.0432 42.2441 43.8535 45.2993 39.5987C48.3545 35.3439 49.9985 30.2381 50 25C50 11.1875 38.8125 0 25 0Z"
                         fill="#1282A2" />
                 </svg>
-                Gituhb
-            </div>
+                Github
+            </a>
         </div>
     </div>
 </body>
+<script>
+    document.getElementById("experience-list").querySelectorAll("li").forEach((ele, id) => ele.onclick = () => { changeDisplay("experience", id) });
+    document.getElementById("experience-details").querySelectorAll("div")
+        .forEach((ele, id) => {
+            if (id != 0)
+                ele.style.display = "none"
+        });
+
+    document.getElementById("achivement-list").querySelectorAll("li").forEach((ele, id) => ele.onclick = () => { changeDisplay("achivement", id) });
+    document.getElementById("achivement-details").querySelectorAll("div")
+        .forEach((ele, id) => {
+            if (id != 0)
+                ele.style.display = "none"
+        });
+
+    function show(ele) {
+        ele.style.display = "block";
+    }
+    function hide(ele) {
+        ele.style.display = "none";
+    }
+    function changeBg(ele, color) {
+        ele.style.background = color;
+    }
+
+    function changeDisplay(section, id) {
+        let listChilds = document.getElementById(`${section}-list`).children;
+        let descChilds = document.getElementById(`${section}-details`).children;
+        let prevId = document.getElementById(`${section}-holder`).dataset.itemdisplay;
+        if (parseInt(prevId) === id)
+            return;
+        document.getElementById(`${section}-holder`).dataset.itemdisplay = id;
+
+        show(descChilds[id]);
+        hide(descChilds[prevId]);
+
+        changeBg(listChilds[prevId], "none");
+        changeBg(listChilds[id], "#1282a2");
+    }
+
+</script>
 
 </html>
