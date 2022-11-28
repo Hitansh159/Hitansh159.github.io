@@ -366,12 +366,27 @@
     color: black;
 }
 
+.resume{
+    border: 1px solid #1282A2;
+    border-radius: 5px;
+    color: white;
+}
+
+.resume:hover{
+    border: 1px solid #1282A2;
+    border-radius: 5px;
+    color: white;
+    animation-name: fill;
+    animation-duration: 1s;
+}
+
 #arrow{
     animation-name: bounce;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-delay: 2s;
     position: relative;
+    cursor: pointer;
 }
 
 @keyframes bounce{
@@ -414,6 +429,7 @@
 
 .list-group{
     border: 1px solid #24C5F3;
+    cursor: pointer; 
 }
 
 .list-group-item{
