@@ -32,3 +32,35 @@
     background-color: black;
 }
 
+#summon_animation{
+    margin: 10vh 10vw ;
+}
+
+#summon_animation_wrapper{
+    height: 1000px; 
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: darkgoldenrod;
+}
+
+#summon_button{
+    color: white;
+    font-size:large;
+    background-color: transparent;
+    padding: 10px 50px;
+    border-radius: 50px;
+}
+/* #summon_button:hover{
+    animation: fill 1s ease-in;
+}
+
+@keyframes fill{
+    20%{background: linear-gradient( transparent , blue )}
+    100%{        background: linear-gradient( blue , blue  )    } 
+    
+}
+    */
+
+
