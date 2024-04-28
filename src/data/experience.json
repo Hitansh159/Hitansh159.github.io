@@ -1,0 +1,45 @@
+{
+    "jobs": [
+        {
+            "title": "JP Morgan & Chase",
+            "role": "Software Developer",
+            "imgSrc": "jp morgan.jpeg",
+            "startDate": "1-8-23",
+            "skills": ["React", "Python"],
+            "details": [
+                "Worked as backend intern.",
+                "As intern setup Springboot environment.",
+                "Created a sample REST API using JAVA SpringBoot.",
+                "Created middleware to check if user have JWT token or not."
+            ]
+        },
+        {
+            "title": "JP Morgan & Chase",
+            "role": "Software Developer Intern",
+            "imgSrc": "jp morgan.jpeg",
+            "startDate": "1-6-22",
+            "EndDate": "31-7-21",
+            "skills": ["React", "Python"],
+            "details": [
+                "Worked as backend intern.",
+                "As intern setup Springboot environment.",
+                "Created a sample REST API using JAVA SpringBoot.",
+                "Created middleware to check if user have JWT token or not."
+            ]
+        },
+        {
+            "title": "Esamyak",
+            "role": "Software Developer Intern",
+            "imgSrc": "esamyak.jpeg",
+            "startDate" : "1-7-21", 
+            "EndDate": "31-8-21",
+            "skills": ["JAVA", "SpringBoot", "Git"],
+            "details": [
+                "Worked as backend intern.",
+                "As intern setup Springboot environment.",
+                "Created a sample REST API using JAVA SpringBoot.",
+                "Created middleware to check if user have JWT token or not."
+            ]
+        }
+    ]    
+}

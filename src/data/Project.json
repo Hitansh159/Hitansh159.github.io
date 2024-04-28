@@ -1,0 +1,31 @@
+{
+    "projects":[
+        {
+            "name": "Style Transfer",
+            "src": "styleTransfer.png",
+            "techUsed": ["JS", "React", "Node"],
+            "details": ["This is a implementation of a reseach paper. Where author used an referance image to give style to another input image. I was able to get same results as author."],
+            "links": [{"type": "Github", "href": "https://github.com/Loony4Logic/jamt"}, {"type": "Website", "href":"https://github.com/Loony4Logic/jamt"}],
+            "highlight": "Submitted for PyTorch Examples Doc",
+            "icon": "doc"
+        },
+        {
+            "name": "ERP",
+            "src": "",
+            "techUsed": ["JS", "Express", "Node", "Docker", "JSDocs", "LVS", "MongoDB"],
+            "details": ["ERP for college"],
+            "links": [{"type": "github", "href": "https://github.com/Loony4Logic/jamt"}],
+            "highlight": "33 Stars on Github",
+            "icon": "star"
+        },
+        {
+            "name": "JAMT - Just Another Monitoring Tool",
+            "src": "",
+            "techUsed": ["JS", "REACT", "Node"],
+            "details": ["JAMT (read as JAM) is a log monitoring tool that combines the simplicity of a CLI tool with the convenience of a WebUI. This lightweight solution allows you to effortlessly monitor logs, providing valuable insights into your application's behavior. With minimal setup, you can start monitoring logs and gaining valuable insights without any hassle."],
+            "links": [{"type": "github", "href": "https://github.com/Loony4Logic/jamt"}],
+            "highlight": "easy plug and play log monitor",
+            "icon": "plug"
+        }
+    ]
+}
