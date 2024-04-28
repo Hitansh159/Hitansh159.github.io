@@ -28,9 +28,15 @@ function SkillBadges({ skills }) {
 }
 
 export default function JobModal({ open, setOpen, job }) {
-  console.log(job)
   const getDuration = (job) => {
-    return "1 Year";
+    let start = new Date(job.startDate);
+    let end = job.endDate? new Date(job.endDate): new Date();
+    let days = (end - start)/(1000*60*60*24);
+    let years = Math.floor(days/365);
+    let months = Math.floor((days%365)/30);
+    let duration = years?years+" years":"";
+    duration = months?months+" months":"";  
+    return duration;
   };
 
   return (
@@ -98,6 +104,7 @@ export default function JobModal({ open, setOpen, job }) {
               <img
                 src={`/assets/${job.imgSrc}`}
                 style={{ position: "relative", right: "100px" }}
+                height="250px"
               />
             </Grid>
             <Grid xs={12}>
