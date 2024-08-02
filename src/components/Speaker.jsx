@@ -13,7 +13,7 @@ export default function Speaker() {
         <CardOverflow>
         <AspectRatio ratio="1.3" sx={{ width: 270 }}>
           <img
-            src="https://images.unsplash.com/photo-1507833423370-a126b89d394b?auto=format&fit=crop&w=360"
+            src='/assets/logos/Docker Speaker.png'
             loading="lazy"
             alt=""
           />
