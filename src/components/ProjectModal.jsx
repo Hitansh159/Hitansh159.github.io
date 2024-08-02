@@ -122,10 +122,9 @@ export default function ProjectModal({ open, setOpen, project }) {
               <Typography level="title-lg"> Description: </Typography>
               <br />
               <ul>
-                {/* {job.details.map((i, _) => {
-                  return <li key={_}>{i}</li>;
-                })} */}
-                {project.details}
+                {project.details.map((detail, idx)=>{
+                  return <li key={idx}>{detail}</li>
+                })}
               </ul>
             </Grid>
           </Grid>
