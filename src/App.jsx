@@ -16,17 +16,19 @@ function App() {
     <>
         <NavBar />
         <Stack gap={2} style={{width:"min(80%, 1200px)", marginInline:"auto", paddingBlockEnd:"50px"}}>
-        <Intro />
-        <About />
-        <Experience />
+          <Intro />
+        {/* 
+          <About />
+          <Experience />
         <Project />
         <Skill />
         <Speaker/>
         <Contact/>
-      </Stack>
-      <Typography level="h4" textAlign={"center"}>  
-        Thats All Folks! Made while groveing with Songs 🎧 and React 👨‍💻
-      </Typography> 
+        */}
+        </Stack>
+        <Typography level="h4" textAlign={"center"}>  
+          Thats All Folks! Made while groveing with Songs 🎧 and React 👨‍💻
+        </Typography>
     </>
   )
 }
