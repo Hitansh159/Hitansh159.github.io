@@ -1,13 +1,13 @@
 import { Button, Stack, Typography } from "@mui/joy";
 import Grid from '@mui/joy/Grid';
 import Divider from '@mui/joy/Divider';
-import { ArrowBigDown, GitBranchPlus, GithubIcon, LinkedinIcon, Mail, ArrowUpRightFromSquare  } from "lucide-react";
+import { ArrowBigDown, GithubIcon, LinkedinIcon, Mail, ArrowUpRightFromSquare  } from "lucide-react";
 import heroImage from "../assets/hero img.png"
 
 export default function Intro() {
   return (
-    <Grid container direction="row" justifyContent="space-between" alignItems="center">
-      <Grid xs={4}>
+    <Grid container sx={{flexDirection:{md:"row", xs:"column"}, marginTop:{xs:5}, alignItems:{md:"center", xs:"start"}}} justifyContent="space-between" alignItems="center">
+      <Grid md={4} xs={10}>
         <h1>Hello There 👋,</h1>I am{" "}
         <Typography level="body-lg"> Hitansh Doshi. </Typography> <br />
         A software engineer with a curious mindset, exploring various domains
@@ -36,18 +36,18 @@ export default function Intro() {
             </Grid>
         </Grid>
 
-        <Grid container justifyContent="center">
+        <Grid container justifyContent="center" sx={{display:{xs:"none", md:"flex"}}}>
             <ArrowBigDown size={90} stroke="0" fill="#7de2fe" />
         </Grid>
 
 
       </Grid>
 
-      <Grid>
+      <Grid sx={{display:{xs:"none", md:"flex"}}}>
         <img
           src={heroImage}
           alt="Hero image"
-          width="700"
+          width="100%"
           height="500"
           loading="lazy"
         />
