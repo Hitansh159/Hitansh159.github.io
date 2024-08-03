@@ -9,7 +9,7 @@ import Link from "./Link";
 export default function About() {
   return (
     <Grid container direction="row" justifyContent="space-between" alignItems="center" id="about" style={{paddingBlockStart:"70px"}}>
-      <Grid xs={6}>
+      <Grid md={6} xs={11}>
         
         <SectionTitle title="About" />
         <Typography level="h4"> Welcome to my digital space! </Typography> <br />
@@ -37,7 +37,7 @@ export default function About() {
 
       </Grid>
 
-      <Grid xs={6}>
+      <Grid md={6} sx={{display:{xs:"none", md:"flex"}}}>
         {/* TODO: find another photo that suites the theme */}
         <img
           src={heroImage}
