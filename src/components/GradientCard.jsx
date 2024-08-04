@@ -15,7 +15,6 @@ export default function GradientCard({imgSrc, cardTitle, cardSubTitle, type, mod
       <CardCover>
         <img
           src={`/assets/${imgSrc}`}
-          srcSet="https://images.unsplash.com/photo-1542773998-9325f0a098d7?auto=format&fit=crop&w=320&dpr=2 2x"
           loading="lazy"
           alt=""
         />

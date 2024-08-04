@@ -53,6 +53,8 @@ export default function JobModal({ open, setOpen, job }) {
           borderRadius: "md",
           p: 3,
           boxShadow: "lg",
+          maxHeight: "80vh",
+          overflowY: 'auto', 
         }}
       >
         <ModalClose variant="plain" sx={{ m: 1 }} />
@@ -71,10 +73,10 @@ export default function JobModal({ open, setOpen, job }) {
           <Grid
             container
             direction="row"
-            justifyContent="space-between"
+            justifyContent="start"
             alignItems="center"
           >
-            <Grid xs={8}>
+            <Grid xs={12} md={8} order={{xs:2, md:1}}>
               <table>
                 <tr>
                   <td>
@@ -100,14 +102,13 @@ export default function JobModal({ open, setOpen, job }) {
                 </tr>
               </table>
             </Grid>
-            <Grid xs={2}>
+            <Grid xs={12} md={2} order={{xs:1, md:2}}>
               <img
                 src={`/assets/${job.imgSrc}`}
-                style={{ position: "relative", right: "100px" }}
                 height="250px"
               />
             </Grid>
-            <Grid xs={12}>
+            <Grid xs={12} order={{xs:3, md:3}}>
               <Typography level="title-lg"> Description: </Typography>
               <br />
               <ul>

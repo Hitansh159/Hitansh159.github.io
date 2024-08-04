@@ -17,9 +17,9 @@ function App() {
         <NavBar />
         <Stack gap={2} style={{width:"min(80%, 1200px)", marginInline:"auto", paddingBlockEnd:"50px"}}>
           <Intro />
-        {/* 
           <About />
           <Experience />
+        {/* 
         <Project />
         <Skill />
         <Speaker/>
