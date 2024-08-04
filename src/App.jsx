@@ -21,8 +21,8 @@ function App() {
           <Experience />
           <Project />
           <Skill />
+          <Speaker/>
         {/* 
-        <Speaker/>
         <Contact/>
         */}
         </Stack>
