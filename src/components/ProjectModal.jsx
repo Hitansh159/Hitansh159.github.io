@@ -62,6 +62,8 @@ export default function ProjectModal({ open, setOpen, project }) {
           borderRadius: "md",
           p: 3,
           boxShadow: "lg",
+          maxHeight: "80vh",
+          overflowY: "auto"
         }}
       >
         <ModalClose variant="plain" sx={{ m: 1 }} />
@@ -83,7 +85,7 @@ export default function ProjectModal({ open, setOpen, project }) {
             justifyContent="space-between"
             alignItems="center"
           >
-            <Grid xs={8}>
+            <Grid xs={12} md={8} order={{xs:2, md:1}}>
               <table>
               <tr>
                   <td>
@@ -111,14 +113,13 @@ export default function ProjectModal({ open, setOpen, project }) {
                 </tr>
               </table>
             </Grid>
-            <Grid xs={2}>
+            <Grid xs={12} md={2} order={{xs:1, md: 2}}>
               <img
                 src={`/assets/${project.src}`}
-                style={{ position: "relative", right: "100px" }}
                 width="100%"
               />
             </Grid>
-            <Grid xs={12}>
+            <Grid xs={12} order={{xs:3}}>
               <Typography level="title-lg"> Description: </Typography>
               <br />
               <ul>

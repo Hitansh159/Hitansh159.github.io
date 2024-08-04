@@ -13,13 +13,15 @@ export default function Project() {
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
-        columns={{ xs: 4, sm: 8, md: 12 }}
+        columns={{ xs: 1, sm: 6, md: 12 }}
         sx={{ flexGrow: 1 }}
         justifyContent="center"
         alignItems="center"
+        direction={{xs:"column", md:"row"}}
+
       >
         {projectData.projects.map((project, index) => (
-          <Grid xs={2} sm={4} md={4} key={index}>
+          <Grid xs={2} sm={4} md={5} lg={4} key={index}>
             <GradientCover
               imgSrc={project.src}
               cardTitle={project.name}
