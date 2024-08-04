@@ -43,12 +43,12 @@ export default function Intro() {
 
       </Grid>
 
-      <Grid sx={{display:{xs:"none", md:"flex"}}}>
+      <Grid md={5} sx={{display:{xs:"none", md:"flex"}}}>
         <img
           src={heroImage}
           alt="Hero image"
           width="100%"
-          height="500"
+          height="auto"
           loading="lazy"
         />
       </Grid>

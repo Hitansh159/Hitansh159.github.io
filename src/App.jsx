@@ -15,7 +15,7 @@ function App() {
   return (
     <>
         <NavBar />
-        <Stack gap={2} style={{width:"min(80%, 1200px)", marginInline:"auto", paddingBlockEnd:"50px"}}>
+        <Stack gap={2} marginTop={{xs:0, md:5}} style={{width:"min(80%, 1200px)", marginInline:"auto", paddingBlockEnd:"50px"}}>
           <Intro />
           <About />
           <Experience />

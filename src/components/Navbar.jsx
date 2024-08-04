@@ -25,7 +25,7 @@ export default function NavBar() {
   };
 
   return (
-    <AppBar position="fixed" color="inherit">
+    <AppBar position="fixed" color="inherit" sx={{bgcolor:"rgb(125, 226, 254)"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* NavBar Title  */}
