@@ -1,6 +1,14 @@
 import Grid from "@mui/joy/Grid";
 import SectionTitle from "./SectionTitle";
 
+function Logo({logoName}){
+  return(
+    <Grid xs={4} md={1}>
+      <img src={`assets/logos/${logoName}.png`} alt={logoName} className="logo" />
+    </Grid>
+  )
+}
+
 export default function Skill() {
   return (
     <Grid
@@ -14,22 +22,21 @@ export default function Skill() {
       <Grid xs={12}>
         <SectionTitle title="Skills" />
       </Grid>
-      <Grid xs={12}></Grid>
-      <img src="assets/logos/python.png" alt="Python" className="logo" />
-      <img src="assets/logos/js.png" alt="javascript" className="logo" />
-      <img src="assets/logos/node.png" alt="node" className="logo" />
-      <img src="assets/logos/react.png" alt="react" className="logo" />
-      <img src="assets/logos/express.png" alt="express" className="logo" />
-      <img src="assets/logos/mongo.png" alt="mongo" className="logo" />
-      <img src="assets/logos/cpp.png" alt="c++" className="logo" />
-      <img src="assets/logos/django.png" alt="Django" className="logo" />
-      <img src="assets/logos/git.png" alt="git" className="logo" />
-      <img src="assets/logos/docker.png" alt="docker" className="logo" />
-      <img
-        src="assets/logos/tensorflow.png"
-        alt="tensorflow"
-        className="logo"
-      />
+      <Grid xs={12}>
+        <Grid container justifyContent="space-evenly" direction="row" alignItems="center" >
+          <Logo logoName={"python"}/>
+          <Logo logoName={"js"}/>
+          <Logo logoName={"node"}/>
+          <Logo logoName={"react"}/>
+          <Logo logoName={"express"}/>
+          <Logo logoName={"mongo"}/>
+          <Logo logoName={"cpp"}/>
+          <Logo logoName={"django"}/>
+          <Logo logoName={"git"}/>
+          <Logo logoName={"docker"}/>
+          <Logo logoName={"tensorflow"}/>
+        </Grid>
+      </Grid>
     </Grid>
   );
 }

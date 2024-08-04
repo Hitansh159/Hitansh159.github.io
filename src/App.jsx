@@ -20,8 +20,8 @@ function App() {
           <About />
           <Experience />
           <Project />
+          <Skill />
         {/* 
-        <Skill />
         <Speaker/>
         <Contact/>
         */}
