@@ -22,9 +22,7 @@ function App() {
           <Project />
           <Skill />
           <Speaker/>
-        {/* 
-        <Contact/>
-        */}
+          <Contact/>
         </Stack>
         <Typography level="h4" textAlign={"center"}>  
           Thats All Folks! Made while groveing with Songs 🎧 and React 👨‍💻
