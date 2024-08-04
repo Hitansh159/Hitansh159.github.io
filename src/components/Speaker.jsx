@@ -7,6 +7,7 @@ import {
   CardOverflow,
   Typography,
 } from "@mui/joy";
+import { motion } from "framer-motion";
 
 export default function Speaker() {
   return (
@@ -22,6 +23,11 @@ export default function Speaker() {
         <SectionTitle title="Speaker At" />
       </Grid>
       <Grid xs={12}>
+        <motion.div
+          whileInView={{opacity:[0,1], y:[25, 0]}}
+          transition={{duration:1}}
+        > 
+          
         <Card
           // orientation={{ xs: "vertical", md: "horizontal" }}
           sx={{flexDirection:{xs:"column", md:"row"}, justifyContent:{xs:"center", md:"start"}}}
@@ -47,6 +53,7 @@ export default function Speaker() {
             </Typography>
           </CardContent>
         </Card>
+        </motion.div>
       </Grid>
     </Grid>
   );

@@ -1,10 +1,11 @@
 import { Button, Stack, Typography } from "@mui/joy";
 import Grid from '@mui/joy/Grid';
 import Divider from '@mui/joy/Divider';
-import { ArrowBigDown, GitBranchPlus, GithubIcon, LinkedinIcon, Mail, ArrowUpRightFromSquare  } from "lucide-react";
 import heroImage from "../assets/about.png"
 import SectionTitle from "./SectionTitle";
 import Link from "./Link";
+import { motion } from "framer-motion"
+
 
 export default function About() {
   return (
@@ -39,12 +40,15 @@ export default function About() {
 
       <Grid md={6} sx={{display:{xs:"none", md:"flex"}}}>
         {/* TODO: find another photo that suites the theme */}
-        <img
+        <motion.img
           src={heroImage}
           alt="About image"
           loading="lazy"
           height="300px"
           style={{marginInline:"150px"}}
+          initial={{opacity:0}}
+          whileInView={{opacity:1}}
+          transition={{duration:1}}
         />
       </Grid>
     </Grid>

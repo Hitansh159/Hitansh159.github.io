@@ -1,10 +1,11 @@
 import Grid from "@mui/joy/Grid";
 import SectionTitle from "./SectionTitle";
+import { motion } from "framer-motion";
 
 function Logo({logoName}){
   return(
     <Grid xs={4} md={1}>
-      <img src={`assets/logos/${logoName}.png`} alt={logoName} className="logo" />
+      <motion.img src={`assets/logos/${logoName}.png`} alt={logoName} className="logo" whileInView={{opacity:[0,1], y:[15,0]}} transition={{duration:1}} />
     </Grid>
   )
 }

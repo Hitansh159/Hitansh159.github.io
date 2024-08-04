@@ -2,6 +2,7 @@ import GradientCard from "./GradientCard";
 import SectionTitle from "./SectionTitle";
 import Grid from '@mui/joy/Grid';
 import expirenceData from "../data/experience.json";
+import { motion } from "framer-motion";
 
 
 export default function Experience() {
@@ -19,7 +20,12 @@ export default function Experience() {
       >
         {expirenceData.jobs.map((job, index) => (
           <Grid xs={2} sm={4} md={5} lg={4} key={index}>
-            <GradientCard imgSrc={job.imgSrc} cardTitle={job.title} cardSubTitle={job.role} type="job" modalData = {job}/>
+            <motion.div 
+              whileInView={{x:["-50vh", "0px"], opacity:[0,1]}}
+              transition={{duration: index*0.2}}
+            >
+              <GradientCard imgSrc={job.imgSrc} cardTitle={job.title} cardSubTitle={job.role} type="job" modalData = {job}/>
+            </motion.div>
           </Grid>
         ))}
       </Grid>
