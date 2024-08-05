@@ -11,7 +11,8 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Divider from '@mui/material/Divider';
 
-const pages = ['about', 'expirence', "projects", "skills", "Achivemnets", "Speaker At", "Contact Me"];
+const pages = ['About', 'Expirence', "Projects", "Skills", "Speaker At", "Contact Me"];
+const pagesHref = ['about', 'expirence', "project", "skill", "speaker", "contact"];
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null); 
@@ -75,8 +76,8 @@ export default function NavBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} component="a" href={`#${page}`} onClick={handleCloseNavMenu}>
+              {pages.map((page, idx) => (
+                <MenuItem key={page} component="a" href={`#${pagesHref[idx]}`} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -102,10 +103,10 @@ export default function NavBar() {
 }} />
 {/* This is for PC/Big Screen */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {pages.map((page, idx) => (
               <Button
                 key={page}
-                href={`#${page}`}
+                href={`#${pagesHref[idx]}`}
                 sx={{ my: 2, color:"black", display: 'block' }}
               >
                 {page}
