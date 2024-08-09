@@ -19,7 +19,7 @@ export default function Experience() {
         direction={{xs:"column", md:"row"}}
       >
         {expirenceData.jobs.map((job, index) => (
-          <Grid xs={2} sm={4} md={5} lg={4} key={index}>
+          <Grid xs={1} sm={4} md={5} lg={4} key={index}>
             <motion.div 
               whileInView={{x:["-50vh", "0px"], opacity:[0,1]}}
               transition={{duration: index*0.2}}

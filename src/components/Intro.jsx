@@ -19,9 +19,9 @@ export default function Intro() {
 
 
   return (
-    <Grid container sx={{flexDirection:{md:"row", xs:"column"}, marginTop:{xs:5}, alignItems:{md:"center", xs:"start"}}} justifyContent="space-between" alignItems="center">
+    <Grid container sx={{flexDirection:{md:"row", xs:"column"}, marginTop:{xs:10}, alignItems:{md:"center", xs:"start"}}} justifyContent="space-between" alignItems="center">
       <Grid md={4} xs={10}>
-        <h1>Hello There,
+        <h3>Hello There,
           <motion.div 
           initial={{transformOrigin:"bottom right"}}
           animate={{rotateZ: [0, 30]}}
@@ -30,9 +30,9 @@ export default function Intro() {
           >
           👋
           </motion.div>
-          </h1>
+          </h3>
         I am
-        <Typography level="body-lg"> Hitansh Doshi. </Typography> <br />
+        <Typography level="h2" fontWeight={700}> Hitansh Doshi. </Typography> <br />
         A software engineer with a curious mindset, exploring various domains
         and gaining valuable experience. <br />
         You can know more about me by scrolling. <br /> <br/>

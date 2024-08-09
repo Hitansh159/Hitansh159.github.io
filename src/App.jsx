@@ -15,14 +15,16 @@ function App() {
   return (
     <>
         <NavBar />
-        <Stack gap={2} marginTop={{xs:0, md:5}} style={{width:"min(80%, 1200px)", marginInline:"auto", paddingBlockEnd:"50px"}}>
+        <Stack gap={2} marginTop={{xs:0, md:5}} style={{width:"min(80%, 1200px)", marginInline:"auto", paddingBlockEnd:"100px"}}>
           <Intro />
           <About />
           <Experience />
           <Project />
           <Skill />
           <Speaker/>
-          <Contact/>
+          <Contact/> 
+          {/* 
+          */}
         </Stack>
         <Typography level="h4" textAlign={"center"}>  
           Thats All Folks! Made while groveing with Songs 🎧 and React 👨‍💻
