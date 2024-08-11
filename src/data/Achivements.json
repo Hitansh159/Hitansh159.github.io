@@ -1,10 +1,47 @@
 {
   "achievements": [
     {
-      "title": "Google Developer Student Club",
+      "title": "GDSC Lead",
       "description": [
-        "Lead the Google developer club.",
-        "Organized 10+ workshops and speaker sessions on technical topics.",
+        "Lead the Google developer club",
+        "Organized 10+ workshops and speaker sessions on technical topics",
+        "Organized first hackathon on android app development on campus."
+      ]
+    },
+    {
+      "title": "Google Hashcode",
+      "description": [
+        "Secured 1272 rank in global level coding competion",
+        "Its a group based hureistic coding competion organized by Google",
+        "where target is to optimized the answer as much we can."
+      ]
+    },
+    {
+      "title": "Google Kickstart",
+      "description": [
+        "Secured 1526 rank at global level coding competion",
+        "It is individual participation competitvie coding competion organized by Google."
+      ]
+    },
+    {
+      "title": "Reply Standard Challange",
+      "description": [
+        "Secured 277 rank in global level coding competion",
+        "Its a group based hureistic coding competion organized by Reply",
+        "Where target is to optimized the answer as much we can."
+      ]
+    },
+    {
+      "title": "Google codeJam",
+      "description": [
+        "cleared qualification round and got 4076th rank",
+        "It is individual participation competitvie coding competion organized by Google"
+      ]
+    },
+    {
+      "title": "NASA Space App Challenge",
+      "description": [
+        "Cleared regional round",
         "Organized first hackathon on android app development on campus."
       ]
     }

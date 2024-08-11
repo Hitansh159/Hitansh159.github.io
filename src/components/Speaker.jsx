@@ -47,9 +47,9 @@ export default function Speaker() {
               Hands On session on Docker
             </Typography>
             <Typography level="body-md">
-              Taught docker in a 4 workshop series. Covering basics topics what
-              is docker to running multiple instaces Follwed by introduction to
-              kubernaties
+              Taught docker in a 4 workshop series. Covering basic topics what
+              is docker to running multiple instances followed by an introduction to
+              Kubernetes
             </Typography>
           </CardContent>
         </Card>

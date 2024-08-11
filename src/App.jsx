@@ -20,13 +20,12 @@ function App() {
           <About />
           <Experience />
           <Project />
+          <Achievement />
           <Skill />
           <Speaker/>
           <Contact/> 
-          {/* 
-          */}
         </Stack>
-        <Typography level="h4" textAlign={"center"}>  
+        <Typography level="h4" textAlign={"center"} marginBlockEnd={2}>  
           Thats All Folks! Made while groveing with Songs 🎧 and React 👨‍💻
         </Typography>
     </>

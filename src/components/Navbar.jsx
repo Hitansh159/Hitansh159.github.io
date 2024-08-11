@@ -11,8 +11,8 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Divider from '@mui/material/Divider';
 
-const pages = ['About', 'Expirence', "Projects", "Skills", "Speaker At", "Contact Me"];
-const pagesHref = ['about', 'expirence', "project", "skill", "speaker", "contact"];
+const pages = ['About', 'Expirence', "Projects", "Achivement", "Skills", "Speaker At", "Contact Me"];
+const pagesHref = ['about', 'expirence', "project", "achivement", "skill", "speaker", "contact"];
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null); 
