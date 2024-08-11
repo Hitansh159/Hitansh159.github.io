@@ -64,7 +64,7 @@ export default function Achievement() {
         direction={{ xs: "column" }}
         gap={2}
       >
-        <Grid ref={scope} xs={1} sm={6} md={12} sx={{minHeight:{xs:"325px", sm:"250px", md:"225px"}}}>
+        <Grid ref={scope} xs={1} sm={6} md={12} sx={{minHeight:"225px"}}>
           <Paper elevation={6} style={{ padding: "20px" }}>
             <Quote display={"block"} style={{ marginBlockEnd: "20px" }} />
             <Typography level="h4">
