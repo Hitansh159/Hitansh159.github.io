@@ -29,8 +29,8 @@ export default function JobModal({ open, setOpen, job }) {
     let days = (end - start) / (1000 * 60 * 60 * 24);
     let years = Math.floor(days / 365);
     let months = Math.floor((days % 365) / 30);
-    let duration = years ? years + " years" : "";
-    duration = months ? months + " months" : "";
+    let duration = years ? years + " years " : "";
+    duration += months ? months + " months " : "";
     return duration;
   };
 
@@ -50,6 +50,7 @@ export default function JobModal({ open, setOpen, job }) {
           boxShadow: "lg",
           maxHeight: "80vh",
           overflowY: "auto",
+          maxWidth: "80vw"
         }}
       >
         <ModalClose variant="plain" sx={{ m: 1 }} />
@@ -98,11 +99,10 @@ export default function JobModal({ open, setOpen, job }) {
               </table>
             </Grid>
             <Grid xs={12} md={2} order={{ xs: 1, md: 2 }}>
-              <img src={`/assets/${job.imgSrc}`} height="250px" />
+              <img src={`/assets/${job.imgSrc}`} width="100%" style={{maxHeight:"250px"}} />
             </Grid>
             <Grid xs={12} order={{ xs: 3, md: 3 }}>
               <Typography level="title-lg"> Description: </Typography>
-              <br />
               <ul>
                 {job.details.map((i, _) => {
                   return <li key={_}>{i}</li>;
