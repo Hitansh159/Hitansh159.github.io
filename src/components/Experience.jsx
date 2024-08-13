@@ -1,24 +1,24 @@
 import GradientCard from "./GradientCard";
 import SectionTitle from "./SectionTitle";
 import Grid from '@mui/joy/Grid';
-import expirenceData from "../data/experience.json";
+import experienceData from "../data/experience.json";
 import { motion } from "framer-motion";
 
 
 export default function Experience() {
   return (
-    <div id="expirence" style={{paddingBlockStart:"70px"}}>
+    <div id="experience" style={{paddingBlockStart:"70px"}}>
       <SectionTitle title="Experience" />
       <Grid
         container
-        spacing={{ xs: 2, md: 3 }}
+        spacing={{ xs: 2, md: 5 }}
         columns={{ xs: 1, sm: 6, md: 12 }}
         sx={{ flexGrow: 1 }}
         justifyContent="center"
         alignItems="center"
         direction={{xs:"column", md:"row"}}
       >
-        {expirenceData.jobs.map((job, index) => (
+        {experienceData.jobs.map((job, index) => (
           <Grid xs={1} sm={4} md={5} lg={4} key={index}>
             <motion.div 
               whileInView={{x:["-50vh", "0px"], opacity:[0,1]}}

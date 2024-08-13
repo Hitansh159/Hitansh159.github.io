@@ -11,7 +11,7 @@ export default function Project() {
       <SectionTitle title="Project" />
       <Grid
         container
-        spacing={{ xs: 2, md: 3 }}
+        spacing={{ xs: 2, md: 5 }}
         columns={{ xs: 1, sm: 6, md: 12 }}
         sx={{ flexGrow: 1 }}
         justifyContent="center"

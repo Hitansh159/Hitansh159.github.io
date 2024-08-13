@@ -6,8 +6,6 @@ import Typography from "@mui/joy/Typography";
 import JobModal from "./JobModal";
 import ProjectModal from "./ProjectModal";
 import { AnimatePresence, motion, useAnimate } from "framer-motion";
-import { duration } from "@mui/material";
-import { Opacity } from "@mui/icons-material";
 
 export default function GradientCard({
   imgSrc,

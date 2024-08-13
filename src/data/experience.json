@@ -7,10 +7,10 @@
       "startDate": "2023-08-01",
       "skills": ["React", "Python"],
       "details": [
-        "Leading transtition to internal monitoring tool for cost reduction and better perfomence.",
+        "Leading transition to internal monitoring tool for cost reduction and better performance.",
         "Collaborating closely with the SRE team to enhance monitoring of the microservices.",
         "Enhanced monitoring for 10+ microservices by instrumenting distributed tracing.",
-        "Migrated 650+ jobs to newer server for better performace.",
+        "Migrated 650+ jobs to the newer server for better performance.",
         "Handling production support and resolving production incidents."
       ]
     },
@@ -25,7 +25,7 @@
         "Enhanced data availability and search result analysis by developing an incident investigation tool.",
         "Built data availability tool using react and python reducing investigation time for 5 teams.",
         "Migrated legacy tool from ASP to React, enhancing investigation experience for two teams.",
-        "Presented data availability tool to PM and AD teams, highlighting their use cases and functionality."
+        "Presented a data availability tool to PM and AD teams, highlighting their use cases and functionality."
       ]
     },
     {
@@ -34,10 +34,10 @@
       "imgSrc": "erp.png",
       "startDate": "2023-02-01",
       "endDate": "2023-07-31",
-      "skills": ["Node", "Express", "Git", "Github", "Team Mangement"],
+      "skills": ["Node", "Express", "Git", "Github", "Team Management"],
       "details": [
-        "Lead a team of 12 backend develpers",
-        "Conducted multiple workshops and sessions on VCS and backend technoloies.",
+        "Lead a team of 12 backend developers",
+        "Conducted multiple workshops and sessions on VCS and backend technologies.",
         "Spearheaded the planning, design, and development of a comprehensive ERP system for the College.",
         "Engineered an adaptable system aligned with the new education policy, ensuring backward data compatibility.",
         "Created resilient system for 10K concurrent users support",
@@ -52,7 +52,7 @@
       "startDate": "2021-07-01",
       "endDate": "2022-07-01",
       "skills": [
-        "Team Mangement",
+        "Team Management",
         "Public speaking",
         "Event planning",
         "Budgeting"
@@ -61,7 +61,7 @@
         "Pioneered the campus's first technical community, fostering a collaborative learning environment.",
         "Lead a team of 20+ students.",
         "Increased community size from 0 to 1000 in a year.",
-        "Handled communitcations across different stakeholders.",
+        "Handled communications across different stakeholders.",
         "Orchestrated workshops on cutting-edge topics, including Cloud, AI/ML, and conducted a comprehensive series on Docker.",
         "Successfully organized the inaugural college hackathon, promoting innovation and collaboration  among students.",
         "Proactively nurtured a culture of technical engagement, providing support, resources, and platforms for student development."
@@ -78,7 +78,7 @@
         "Worked as backend intern.",
         "As intern setup Springboot environment.",
         "Created a sample REST API using JAVA SpringBoot.",
-        "Created middleware to check if user has JWT token or not."
+        "Created middleware to check if the user has JWT token."
       ]
     }
   ]

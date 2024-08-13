@@ -1,4 +1,4 @@
-import { Button, Stack, Typography } from "@mui/joy";
+import { Button, Stack, Tooltip, Typography } from "@mui/joy";
 import Grid from '@mui/joy/Grid';
 import Divider from '@mui/joy/Divider';
 import { ArrowBigDown, ArrowUpRightFromSquare  } from "lucide-react";
@@ -40,7 +40,9 @@ export default function Intro() {
 
         <Grid container direction="row" justifyContent="space-evenly" alignItems="center" sx={{padding:"15px 0"}}>
             <Grid sx={2}>
+              <Tooltip title="Open Resume">
                 <Button component="a" href="/resume/Resume.pdf" startDecorator={<ArrowUpRightFromSquare size={20} />} target="_blank">Resume</Button>
+              </Tooltip>
             </Grid>
             <Grid sx={2}>
                 <a href='mailto:hkd159@gmail.com' target='_blank'>                    

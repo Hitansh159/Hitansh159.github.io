@@ -5,12 +5,12 @@
       "src": "styleTransfer.png",
       "techUsed": ["Python", "Pytorch"],
       "details": [
-        "This is a implementation of a reseach paper.",
-        "Able to replicate results from paper",
-        "submited for pythorch tutorial Document"
+        "This is an implementation of a research paper.",
+        "Able to replicate results from the paper",
+        "Submitted for Pythorch tutorial Document"
       ],
       "links": [
-        { "type": "Website", "href": "https://lnkd.in/ejsEbGD" }
+        { "type": "Website", "href": "https://colab.research.google.com/drive/1CodJPb_iEwXjxTSK-fEYmsv6Vbjmakyu?usp=sharing" }
       ],
       "highlight": "Submitted for PyTorch Examples Doc",
       "icon": "doc"
@@ -38,7 +38,7 @@
       "links": [
         { "type": "github", "href": "https://github.com/tcet-opensource/erp-backend" }
       ],
-      "highlight": "33 Stars on Github",
+      "highlight": "33 Stars on GitHub",
       "icon": "star"
     },
     {

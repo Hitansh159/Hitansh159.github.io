@@ -1,21 +1,37 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
-import Divider from '@mui/material/Divider';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
+import Divider from "@mui/material/Divider";
 
-const pages = ['About', 'Expirence', "Projects", "Achivement", "Skills", "Speaker At", "Contact Me"];
-const pagesHref = ['about', 'expirence', "project", "achivement", "skill", "speaker", "contact"];
+const pages = [
+  "About",
+  "Experience",
+  "Projects",
+  "Achivement",
+  "Skills",
+  "Speaker At",
+  "Contact Me",
+];
+const pagesHref = [
+  "about",
+  "experience",
+  "project",
+  "achivement",
+  "skill",
+  "speaker",
+  "contact",
+];
 
 export default function NavBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null); 
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -26,7 +42,11 @@ export default function NavBar() {
   };
 
   return (
-    <AppBar position="fixed" color="inherit" sx={{bgcolor:"rgb(125, 226, 254)"}}>
+    <AppBar
+      position="fixed"
+      color="inherit"
+      sx={{ bgcolor: "rgb(125, 226, 254)" }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           {/* NavBar Title  */}
@@ -37,18 +57,18 @@ export default function NavBar() {
             href="/"
             sx={{
               mr: 3,
-              display: { xs: 'none', md: 'flex' },
+              display: { xs: "none", md: "flex" },
               fontWeight: 700,
-              color: 'inherit',
-              textDecoration: 'none',
-              textAlign:'left'
+              color: "inherit",
+              textDecoration: "none",
+              textAlign: "left",
             }}
           >
             Hitansh Doshi
           </Typography>
 
           {/* This is for phone/small screens */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-controls="menu-appbar"
@@ -62,22 +82,27 @@ export default function NavBar() {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
+                vertical: "bottom",
+                horizontal: "left",
               }}
               keepMounted
               transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
+                vertical: "top",
+                horizontal: "left",
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page, idx) => (
-                <MenuItem key={page} component="a" href={`#${pagesHref[idx]}`} onClick={handleCloseNavMenu}>
+                <MenuItem
+                  key={page}
+                  component="a"
+                  href={`#${pagesHref[idx]}`}
+                  onClick={handleCloseNavMenu}
+                >
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -90,112 +115,35 @@ export default function NavBar() {
             href="/"
             sx={{
               mr: 3,
-              display: { xs: 'flex', md: 'none' },
+              display: { xs: "flex", md: "none" },
               fontWeight: 700,
-              color: 'inherit',
-              textDecoration: 'none',
+              color: "inherit",
+              textDecoration: "none",
             }}
           >
             Hitansh Doshi
           </Typography>
 
-          <Divider orientation="vertical" variant="middle" flexItem sx={{mr:2,               display: { xs: 'none', md: 'flex' },
-}} />
-{/* This is for PC/Big Screen */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Divider
+            orientation="vertical"
+            variant="middle"
+            flexItem
+            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+          />
+          {/* This is for PC/Big Screen */}
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page, idx) => (
               <Button
                 key={page}
                 href={`#${pagesHref[idx]}`}
-                sx={{ my: 2, color:"black", display: 'block' }}
+                sx={{ my: 2, color: "black", display: "block" }}
               >
                 {page}
               </Button>
             ))}
           </Box>
-
-
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
-
-
-/*
-import * as React from 'react';
-import Box from '@mui/joy/Box';
-import List from '@mui/joy/List';
-import ListDivider from '@mui/joy/ListDivider';
-import ListItem from '@mui/joy/ListItem';
-import ListItemButton from '@mui/joy/ListItemButton';
-
-export default function NavBar() {
-  return (
-
-    
-    <Box component="nav" aria-label="NavNar" sx={{ flexGrow: 1, padding:"5px 0",boxShadow:"0px 2px 7px 3px gray", position:"sticky", top:0, left:0, background:"white", zIndex:"100"}} >
-      <List role="menubar" orientation="horizontal">
-        <ListItem role="heading" sx={{ fontSize: '25px' }} component="a" href='/'>
-            Hitansh Doshi
-        </ListItem>
-        
-        <ListDivider />
-        
-
-        <ListItem role="none">
-          <ListItemButton role="menuitem" component="a" href="#about">
-            About
-          </ListItemButton>
-        </ListItem>
-        
-        <ListItem role="none">
-          <ListItemButton role="menuitem" component="a" href="#expirence">
-            Experience
-          </ListItemButton>
-        </ListItem>
-        
-        <ListItem role="none">
-          <ListItemButton role="menuitem" component="a" href="#project">
-            Projects
-          </ListItemButton>
-        </ListItem>
-        
-        <ListItem role="none">
-          <ListItemButton role="menuitem" component="a" href="#skill">
-            Skills
-          </ListItemButton>
-        </ListItem>
-        
-        <ListItem role="none">
-          <ListItemButton role="menuitem" component="a" href="#horizontal-list">
-            Achivements
-          </ListItemButton>
-        </ListItem> 
-        
-        <ListItem role="none">
-          <ListItemButton role="menuitem" component="a" href="#speaker">
-            Speaker At
-          </ListItemButton>
-        </ListItem>
-        
-        <ListItem role="none">
-          <ListItemButton role="menuitem" component="a" href="#contact">
-            Contact Me
-          </ListItemButton>
-        </ListItem>
-        
-        <ListDivider/>
-        
-        
-        <ListItem role="none">
-          <ListItemButton role="menuitem" component="a" href="https://medium.com/@hkd159" target='_blank'>
-            Blogs
-          </ListItemButton>
-        </ListItem>
-      </List>
-    </Box>
-  );
-}
-
-*/
