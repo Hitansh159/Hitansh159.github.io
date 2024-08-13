@@ -1,6 +1,26 @@
 {
   "projects": [
     {
+      "name": "OpenRacer",
+      "src": "openracer.png",
+      "techUsed": ["Python", "Unity", "React"],
+      "details": [
+        "Created open-source software for autonomous racing with Python and Unity.",
+        "Implemented a Python-based system for training AI models in racing simulations.",
+        "Built a 3D racing environment using Unity, connected to Python for immersive simulations.",
+        "Enabled users to design and manage custom racing tracks with server-provided coordinates.",
+        "Developed a web interface for live tracking and visualization of model training and performance.",
+        "Created tools for adjusting hyperparameters and optimizing AI model performance.",
+        "Led the development of a customizable and extendable open-source racing program.",
+        "Engaged with contributors to refine and enhance the platform based on user feedback."
+      ],
+      "links": [
+        { "type": "Github", "href": "https://github.com/Loony4Logic/OpenRacer" }
+      ],
+      "highlight": "AI Car racer training and simulation environmnet.",
+      "icon": "car"
+    },
+    {
       "name": "Style Transfer",
       "src": "styleTransfer.png",
       "techUsed": ["Python", "Pytorch"],
@@ -10,7 +30,10 @@
         "Submitted for Pythorch tutorial Document"
       ],
       "links": [
-        { "type": "Website", "href": "https://colab.research.google.com/drive/1CodJPb_iEwXjxTSK-fEYmsv6Vbjmakyu?usp=sharing" }
+        {
+          "type": "Website",
+          "href": "https://colab.research.google.com/drive/1CodJPb_iEwXjxTSK-fEYmsv6Vbjmakyu?usp=sharing"
+        }
       ],
       "highlight": "Submitted for PyTorch Examples Doc",
       "icon": "doc"
@@ -36,7 +59,10 @@
         "Managed the project efficiently by generating issues and meticulously tracking progress, ensuring timely and successful completion."
       ],
       "links": [
-        { "type": "github", "href": "https://github.com/tcet-opensource/erp-backend" }
+        {
+          "type": "github",
+          "href": "https://github.com/tcet-opensource/erp-backend"
+        }
       ],
       "highlight": "33 Stars on GitHub",
       "icon": "star"
@@ -44,14 +70,7 @@
     {
       "name": "NASA Ontology",
       "src": "ontology.png",
-      "techUsed": [
-        "JS",
-        "Express",
-        "Node",
-        "Docker",
-        "Pyhton",
-        "ML"
-      ],
+      "techUsed": ["JS", "Express", "Node", "Docker", "Pyhton", "ML"],
       "details": [
         "Engineered an adaptable ERP system aligned with the new education policy",
         "Built support for seamless data transfer from the existing system.",
@@ -61,7 +80,10 @@
         "Managed the project efficiently by generating issues and meticulously tracking progress, ensuring timely and successful completion."
       ],
       "links": [
-        { "type": "github", "href": "https://github.com/Hitansh159/nasa-ontology" }
+        {
+          "type": "github",
+          "href": "https://github.com/Hitansh159/nasa-ontology"
+        }
       ],
       "highlight": "Ontologies and Interactive Network Visualizations for public dataset by NASA"
     }
