@@ -59,7 +59,7 @@ export default function GradientCard({
   return (
     <>
       <Card
-        sx={{ minHeight: "280px", width: 270 }}
+        sx={{ minHeight: "280px", width: 270, opacity:1 }}
         id={`card-${cardTitle}`}
         onClick={() => setOpen(true)}
         ref={scope}
