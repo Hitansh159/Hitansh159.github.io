@@ -1,0 +1,36 @@
+{
+  "achievements": [
+    {
+      "title": "HackNIT Hackathon",
+      "description": ["Won 2nd price in sponsored product category"]
+    },
+    {
+      "title": "Google Hashcode",
+      "description": [
+        "Secured rank in top ~10% in global level heuristic coding competition"
+      ]
+    },
+    {
+      "title": "Google Kickstart",
+      "description": [
+        "Secured rank in top ~10% at global level coding competition"
+      ]
+    },
+    {
+      "title": "Reply Standard Challange",
+      "description": [
+        "Secured rank in top ~6% at global level heuristic coding competition"
+      ]
+    },
+    {
+      "title": "Google codeJam",
+      "description": [
+        "Cleared qualification round at a global coding competition"
+      ]
+    },
+    {
+      "title": "NASA Space App Challenge",
+      "description": ["Cleared regional round"]
+    }
+  ]
+}

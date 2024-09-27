@@ -1,0 +1,104 @@
+{
+  "projects": [
+    {
+      "name": "OpenRacer",
+      "src": "openracer.png",
+      "techUsed": ["Python", "Unity", "React"],
+      "details": [
+        "Created open-source software for autonomous racing with Python and Unity.",
+        "Implemented a Python-based system for training AI models in racing simulations.",
+        "Built a 3D racing environment using Unity, connected to Python for immersive simulations.",
+        "Enabled users to design and manage custom racing tracks with server-provided coordinates.",
+        "Developed a web interface for live tracking and visualization of model training and performance.",
+        "Created tools for adjusting hyperparameters and optimizing AI model performance.",
+        "Led the development of a customizable and extendable open-source racing program.",
+        "Engaged with contributors to refine and enhance the platform based on user feedback."
+      ],
+      "links": [
+        { "type": "Github", "href": "https://github.com/Loony4Logic/OpenRacer" }
+      ],
+      "highlight": "AI Car racer training and simulation environmnet.",
+      "icon": "car"
+    },
+    {
+      "name": "Style Transfer",
+      "src": "styleTransfer.png",
+      "techUsed": ["Python", "Pytorch"],
+      "details": [
+        "This is an implementation of a research paper.",
+        "Able to replicate results from the paper",
+        "Submitted for Pythorch tutorial Document"
+      ],
+      "links": [
+        {
+          "type": "Website",
+          "href": "https://colab.research.google.com/drive/1CodJPb_iEwXjxTSK-fEYmsv6Vbjmakyu?usp=sharing"
+        }
+      ],
+      "highlight": "Submitted for PyTorch Examples Doc",
+      "icon": "doc"
+    },
+    {
+      "name": "ERP",
+      "src": "erp.png",
+      "techUsed": [
+        "JS",
+        "Express",
+        "Node",
+        "Docker",
+        "JSDocs",
+        "LVS",
+        "MongoDB"
+      ],
+      "details": [
+        "Engineered an adaptable ERP system aligned with the new education policy",
+        "Built support for seamless data transfer from the existing system.",
+        "Ensured resilience to accommodate 10k concurrent users, emphasizing system performance and scalability.",
+        "Developed comprehensive setup documentation guidelines, streamlining implementation and maintenance processes.",
+        "Led training sessions for the next batch, imparting knowledge on new joining developers.",
+        "Managed the project efficiently by generating issues and meticulously tracking progress, ensuring timely and successful completion."
+      ],
+      "links": [
+        {
+          "type": "github",
+          "href": "https://github.com/tcet-opensource/erp-backend"
+        }
+      ],
+      "highlight": "33 Stars on GitHub",
+      "icon": "star"
+    },
+    {
+      "name": "NASA Ontology",
+      "src": "ontology.png",
+      "techUsed": ["JS", "Express", "Node", "Docker", "Pyhton", "ML"],
+      "details": [
+        "Engineered an adaptable ERP system aligned with the new education policy",
+        "Built support for seamless data transfer from the existing system.",
+        "Ensured resilience to accommodate 10k concurrent users, emphasizing system performance and scalability.",
+        "Developed comprehensive setup documentation guidelines, streamlining implementation and maintenance processes.",
+        "Led training sessions for the next batch, imparting knowledge on new joining developers.",
+        "Managed the project efficiently by generating issues and meticulously tracking progress, ensuring timely and successful completion."
+      ],
+      "links": [
+        {
+          "type": "github",
+          "href": "https://github.com/Hitansh159/nasa-ontology"
+        }
+      ],
+      "highlight": "Ontologies and Interactive Network Visualizations for public dataset by NASA"
+    }
+  ],
+  "archived": {
+    "name": "JAMT - Just Another Monitoring Tool",
+    "src": "https://avatars.githubusercontent.com/u/115614449?s=48&v=4",
+    "techUsed": ["JS", "REACT", "Node"],
+    "details": [
+      "JAMT (read as JAM) is a log monitoring tool that combines the simplicity of a CLI tool with the convenience of a WebUI. This lightweight solution allows you to effortlessly monitor logs, providing valuable insights into your application's behavior. With minimal setup, you can start monitoring logs and gaining valuable insights without any hassle."
+    ],
+    "links": [
+      { "type": "github", "href": "https://github.com/Loony4Logic/jamt" }
+    ],
+    "highlight": "easy plug and play log monitor",
+    "icon": "plug"
+  }
+}
