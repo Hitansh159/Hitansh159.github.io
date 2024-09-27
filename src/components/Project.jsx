@@ -21,12 +21,12 @@ export default function Project() {
         {projectData.projects.map((project, index) => (
           <Grid xs={1} sm={4} md={5} lg={4} key={index}>
             <motion.div
-              whileInView={{ x: ["50vh", "0px"], opacity: [0, 1] }}
-              transition={{ duration: index * 0.2 }}
+              whileInView={{ x: ["50vh", "0px"] }}
+              transition={{ duration: 0 }}
             >
               <GradientCover
                 imgSrc={project.src}
-                cardTitle={project.name}
+                cardTitle={project.name}  
                 cardSubTitle={projectHighlight(project.highlight, project.icon)}
                 type="project"
                 modalData={project}
