@@ -21,10 +21,7 @@ export default function About() {
         <Typography level="h4"> Welcome to my digital space! </Typography>{" "}
         <br />
         <Typography>
-          Outside of work, I lead and contribute to open-source projects like
-          OpenRacer AI, a Unity + Python-based platform for training autonomous
-          driving agents. I’ve also delivered technical workshops as a GDSC Lead
-          and consistently ranked in top global coding competitions.
+
           <p>
             I am Hitansh Doshi, a Full Stack Developer with 2 years of
             experience at{" "}
